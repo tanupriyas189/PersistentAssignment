@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: newfont;
+  src: url("newfont.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-family: "Lilita One", cursive;
+  font-weight: 300;
+  padding: 50px 0;
+  height: 100vh;
+  background-image: url("cardImg/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.player {
+  /* border: 1px solid black; */
+  color: aliceblue;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.button,
+#winner,
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#winner {
+  color: aliceblue;
+}
+.title {
+  color: rgb(0, 17, 0, 0.5);
+  text-shadow: 3px 3px gray;
+  padding-bottom: 50px;
+  font-size: 25px;
+}
+.player h1 {
+  text-shadow: 3px 3px gray;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+button:active {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+img {
+  height: 120px;
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cardsbox {
+  display: flex;
+  padding: 10px 0;
+}
+.highestCardInfo {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#flipcard1,
+#flipcard2,
+#flipcard3,
+#flipcard4,
+#flipcard5,
+#flipcard6 {
+  background-color: transparent;
+  height: 120px;
+  width: 80px;
+  margin: 5px;
+  perspective: 1000px;
+}
+
+#flipcardinner1,
+#flipcardinner2,
+#flipcardinner3,
+#flipcardinner4,
+#flipcardinner5,
+#flipcardinner6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipcardback {
+  transform: rotateY(180deg);
+}
+
+.flipcardfront,
+.flipcardback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0 100px;
+  }
+  body {
+    height: auto;
+  }
+  .player {
+    margin: 20px 0;
+  }
+  #winner {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  body {
+    height: auto;
+  }
+  .player {
+    margin: 20px 0;
+  }
+  #winner {
+    margin: 10px;
+  }
+}
+/* -------------------------------------------- */

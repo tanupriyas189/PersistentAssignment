@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="text title">
+      <h1>Night Poker</h1>
+    </div>
+
+    <div class="container">
+      <!-- Player One -->
+      <div class="player">
+        <h1>Player1</h1>
+        <h2 id="player1Name">Name:Suresh</h2>
+        <div class="cardsbox">
+          <div id="flipcard1">
+            <div id="flipcardinner1">
+              <div class="flipcardfront">
+                <img src="cardImg/bgcard1.png" alt="card-image" />
+              </div>
+              <div class="flipcardback">
+                <img id="card1" src="./cardImg/5.png" alt="card-image" />
+              </div>
+            </div>
+          </div>
+          <div id="flipcard2">
+            <div id="flipcardinner2">
+              <div class="flipcardfront">
+                <img src="cardImg/bgcard1.png" alt="card-image" />
+              </div>
+              <div class="flipcardback">
+                <img id="card2" src="./cardImg/5.png" alt="card-image" />
+              </div>
+            </div>
+          </div>
+          <div id="flipcard3">
+            <div id="flipcardinner3">
+              <div class="flipcardfront">
+                <img src="cardImg/bgcard1.png" alt="card-image" />
+              </div>
+              <div class="flipcardback">
+                <img id="card3" src="./cardImg/5.png" alt="card-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show highest card button -->
+        <div>
+          <button id="btn1">Show Highest Card</button>
+        </div>
+
+        <!-- Show highest car information -->
+        <div class="highestCardInfo">
+          <h2 id="player1hcName"></h2>
+          <h2 id="player1hcScore"></h2>
+        </div>
+
+        <!-- highest card -->
+        <div>
+          <img
+            style="display: none"
+            id="player1maxCard"
+            src="./cardImg/spade_3.png"
+            alt="card-image"
+          />
+        </div>
+      </div>
+
+      <!-- Player Two -->
+      <div class="player">
+        <h1>Player2</h1>
+        <h2 id="player2Name">Name:Ramesh</h2>
+        <div class="cardsbox">
+          <div id="flipcard4">
+            <div id="flipcardinner4">
+              <div class="flipcardfront">
+                <img src="cardImg/bgcard1.png" alt="card-image" />
+              </div>
+              <div class="flipcardback">
+                <img id="card4" src="./cardImg/5.png" alt="card-image" />
+              </div>
+            </div>
+          </div>
+          <div id="flipcard5">
+            <div id="flipcardinner5">
+              <div class="flipcardfront">
+                <img src="cardImg/bgcard1.png" alt="card-image" />
+              </div>
+              <div class="flipcardback">
+                <img id="card5" src="./cardImg/5.png" alt="card-image" />
+              </div>
+            </div>
+          </div>
+          <div id="flipcard6">
+            <div id="flipcardinner6">
+              <div class="flipcardfront">
+                <img src="cardImg/bgcard1.png" alt="card-image" />
+              </div>
+              <div class="flipcardback">
+                <img id="card6" src="./cardImg/5.png" alt="card-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show highest card button -->
+        <div>
+          <button id="btn2">Show Highest Card</button>
+        </div>
+
+        <!-- Show highest car information -->
+        <div class="highestCardInfo">
+          <h2 id="player2hcName"></h2>
+          <h2 id="player2hcScore"></h2>
+        </div>
+
+        <!-- highest card -->
+        <div>
+          <img
+            style="display: none"
+            id="player2maxCard"
+            src="./cardImg/3.png"
+            alt="card-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Decide Winner button -->
+    <div class="button">
+      <button id="decideWinnerBtn">Decide Winner</button>
+    </div>
+
+    <div>
+      <h1 id="winner"></h1>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
